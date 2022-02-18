@@ -16,5 +16,23 @@ namespace SistemaControlPersonal
         {
             InitializeComponent();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            frmModRegAsistencia frmModRegAsis = new frmModRegAsistencia(); 
+            frmModRegAsis.ShowDialog();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            frmModRegAsistencia frmModRegAsis = new frmModRegAsistencia();
+            frmModRegAsis.ShowDialog();
+
+        }
     }
 }

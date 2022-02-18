@@ -18,11 +18,6 @@ namespace SistemaControlPersonal
             InitializeComponent();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
         private void cboxMostrar_CheckedChanged(object sender, EventArgs e)
         {
             {
@@ -52,7 +47,9 @@ namespace SistemaControlPersonal
                    // Datos.Ac = bd.selectstring("select PERFIL from usuarios where usuario = '" + txtUsuario.TextLength + "'");
                     frmPricipal principal = new frmPricipal();
                     principal.Show();
-                    this.Hide();
+                    this.Close();
+                    frmAplicacion aplicacion = new frmAplicacion();
+                    aplicacion.Close();
                 }
                 else
                 {
@@ -63,6 +60,14 @@ namespace SistemaControlPersonal
             {
                 MessageBox.Show("Llene los campos correctamente");
             }
+        }
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+
+            frmAplicacion apl = new frmAplicacion();
+            this.Close();
+            apl.ShowDialog();
+
         }
     }
 }

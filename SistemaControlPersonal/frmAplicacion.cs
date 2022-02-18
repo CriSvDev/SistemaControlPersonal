@@ -22,16 +22,16 @@ namespace SistemaControlPersonal
             frmLogeo logeo = new frmLogeo();
             this.Hide();
             logeo.ShowDialog();
-            this.Show();
 
         }
 
         private void btnAsistencia_Click(object sender, EventArgs e)
         {
-            frmAsistencia asi = new frmAsistencia();
+            frmRegAsistencia asi = new frmRegAsistencia();
             this.Hide();
             asi.ShowDialog();
             this.Show();
         }
+  
     }
 }

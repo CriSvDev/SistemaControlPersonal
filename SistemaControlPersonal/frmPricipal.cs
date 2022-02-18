@@ -44,5 +44,20 @@ namespace SistemaControlPersonal
             AbrirFormInPanel(new frmUsuarios());
 
         }
+
+        private void btnAreas_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmAreas());
+        }
+
+        private void btnAsistencia_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmAsistencia());
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            AbrirFormInPanel(new frmReportes());
+        }
     }
 }

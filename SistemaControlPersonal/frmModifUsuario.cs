@@ -19,10 +19,9 @@ namespace SistemaControlPersonal
         }
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            bd.executecommand("UPDATE USUARIO SET USUARIO = '" + txtUsuario.Text + "' WHERE ID = '" + txtId.Text + "'");
+            bd.executecommand("UPDATE USUARIO SET USUARIO = '" + txtUsuario.Text + "' WHERE ID = '");
 
             MessageBox.Show("El actualizo registro correctamente");
-            txtId.Clear();
             txtUsuario.Clear();
             txtUsuario.Focus();
         }

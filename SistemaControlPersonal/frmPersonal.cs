@@ -16,5 +16,17 @@ namespace SistemaControlPersonal
         {
             InitializeComponent();
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            frmAddPersonal frmAddPersonal = new frmAddPersonal();
+            frmAddPersonal.ShowDialog();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            frmAddPersonal frmAddPersonal = new frmAddPersonal();
+            frmAddPersonal.ShowDialog();
+        }
     }
 }

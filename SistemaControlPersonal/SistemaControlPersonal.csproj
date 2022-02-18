@@ -49,6 +49,24 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="Datos.cs" />
+    <Compile Include="frmAddAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddAreas.Designer.cs">
+      <DependentUpon>frmAddAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddPersonal.Designer.cs">
+      <DependentUpon>frmAddPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAreas.Designer.cs">
+      <DependentUpon>frmAreas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +79,11 @@
     <Compile Include="frmAplicacion.Designer.cs">
       <DependentUpon>frmAplicacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAsistencia.cs">
+    <Compile Include="frmRegAsistencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAsistencia.Designer.cs">
-      <DependentUpon>frmAsistencia.cs</DependentUpon>
+    <Compile Include="frmRegAsistencia.Designer.cs">
+      <DependentUpon>frmRegAsistencia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogeo.cs">
       <SubType>Form</SubType>
@@ -79,6 +97,12 @@
     <Compile Include="frmModifUsuario.Designer.cs">
       <DependentUpon>frmModifUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModRegAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModRegAsistencia.Designer.cs">
+      <DependentUpon>frmModRegAsistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPersonal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +115,18 @@
     <Compile Include="frmPricipal.Designer.cs">
       <DependentUpon>frmPricipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsistencia.Designer.cs">
+      <DependentUpon>frmAsistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,14 +135,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddAreas.resx">
+      <DependentUpon>frmAddAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddPersonal.resx">
+      <DependentUpon>frmAddPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddUsuario.resx">
       <DependentUpon>frmAddUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicacion.resx">
       <DependentUpon>frmAplicacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAsistencia.resx">
-      <DependentUpon>frmAsistencia.cs</DependentUpon>
+    <EmbeddedResource Include="frmAreas.resx">
+      <DependentUpon>frmAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegAsistencia.resx">
+      <DependentUpon>frmRegAsistencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogeo.resx">
       <DependentUpon>frmLogeo.cs</DependentUpon>
@@ -114,11 +159,20 @@
     <EmbeddedResource Include="frmModifUsuario.resx">
       <DependentUpon>frmModifUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmModRegAsistencia.resx">
+      <DependentUpon>frmModRegAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPersonal.resx">
       <DependentUpon>frmPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPricipal.resx">
       <DependentUpon>frmPricipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsistencia.resx">
+      <DependentUpon>frmAsistencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>

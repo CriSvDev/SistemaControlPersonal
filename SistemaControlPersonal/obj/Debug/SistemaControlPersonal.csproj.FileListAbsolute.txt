@@ -16,3 +16,9 @@ C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaCont
 C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmPricipal.resources
 C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmUsuarios.resources
 C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmModifUsuario.resources
+C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAreas.resources
+C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmReportes.resources
+C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmModRegAsistencia.resources
+C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmRegAsistencia.resources
+C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAddPersonal.resources
+C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAddAreas.resources

@@ -52,5 +52,10 @@ namespace SistemaControlPersonal
         {
             dgvUsuarios.DataSource = bd.SelectDataTableFromStoreProcedure("sp_MostrarUsuarios");
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
