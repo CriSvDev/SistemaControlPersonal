@@ -12,6 +12,7 @@ namespace SistemaControlPersonal
 {
     public partial class frmPersonal : Form
     {
+        BaseDeDatos bd = new BaseDeDatos();
         public frmPersonal()
         {
             InitializeComponent();
@@ -27,6 +28,16 @@ namespace SistemaControlPersonal
         {
             frmAddPersonal frmAddPersonal = new frmAddPersonal();
             frmAddPersonal.ShowDialog();
+        }
+
+        private void frmPersonal_Load(object sender, EventArgs e)
+        {
+            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("sp_MostrarEmpleados");
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

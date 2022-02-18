@@ -66,7 +66,7 @@
             this.txtEstado.MaximumSize = new System.Drawing.Size(120, 30);
             this.txtEstado.MinimumSize = new System.Drawing.Size(110, 30);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(120, 30);
+            this.txtEstado.Size = new System.Drawing.Size(120, 22);
             this.txtEstado.TabIndex = 49;
             // 
             // label4
@@ -104,7 +104,7 @@
             // 
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1063, 8);
+            this.btnCerrar.Location = new System.Drawing.Point(1060, 0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(52, 39);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -127,7 +127,7 @@
             this.txtID.MaximumSize = new System.Drawing.Size(120, 30);
             this.txtID.MinimumSize = new System.Drawing.Size(100, 30);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(120, 30);
+            this.txtID.Size = new System.Drawing.Size(120, 22);
             this.txtID.TabIndex = 43;
             // 
             // btnEliminar
@@ -175,7 +175,7 @@
             this.txtUsuario.MaximumSize = new System.Drawing.Size(120, 30);
             this.txtUsuario.MinimumSize = new System.Drawing.Size(110, 30);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(120, 30);
+            this.txtUsuario.Size = new System.Drawing.Size(120, 22);
             this.txtUsuario.TabIndex = 39;
             // 
             // label2
@@ -205,7 +205,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1124, 54);
+            this.panel1.Size = new System.Drawing.Size(1124, 38);
             this.panel1.TabIndex = 51;
             // 
             // frmUsuarios

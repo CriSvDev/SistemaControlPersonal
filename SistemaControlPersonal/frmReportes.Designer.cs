@@ -98,6 +98,7 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnCerrar.TabIndex = 59;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label3
             // 

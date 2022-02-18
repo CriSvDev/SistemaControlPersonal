@@ -20,13 +20,14 @@ namespace SistemaControlPersonal
         BaseDeDatos bd = new BaseDeDatos();
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            bd.executecommand("INSERT INTO USUARIO ([USUARIO],[CONTRASENA],[PERFIL],[ESTADO])" + "VALUES ('" + this.txtUsuario.Text + "','" + this.txtContra.Text + "','" + this.txtPerfil.Text + "','" + this.txtEstado.Text + "')");
+            bd.executecommand("INSERT USUARIO ([USUARIO],[CONTRASENA],[PERFIL],[ESTADO],[ID_EMP])" + "VALUES ('" + this.txtUsuario.Text + "','" + this.txtContra.Text + "','" + this.txtPerfil.Text + "','" + this.txtEstado.Text + "'" + this.txtIdEmpleado.Text + "')");
 
             MessageBox.Show("El usuario: " + txtUsuario.Text + " se ha agregado correctamente");
             txtUsuario.Clear();
             txtContra.Clear();
             txtPerfil.Clear();
             txtEstado.Clear();
+            txtIdEmpleado.Clear();
             txtUsuario.Focus();
         }
     }

@@ -40,13 +40,13 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.dgvAreas = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAreas)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +95,7 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnCerrar.TabIndex = 73;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // label3
             // 
@@ -175,16 +176,16 @@
             this.label2.TabIndex = 66;
             this.label2.Text = "Area";
             // 
-            // dgvUsuarios
+            // dgvAreas
             // 
-            this.dgvUsuarios.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvUsuarios.Location = new System.Drawing.Point(33, 184);
-            this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.RowHeadersWidth = 51;
-            this.dgvUsuarios.Size = new System.Drawing.Size(805, 362);
-            this.dgvUsuarios.TabIndex = 65;
+            this.dgvAreas.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvAreas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAreas.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvAreas.Location = new System.Drawing.Point(33, 184);
+            this.dgvAreas.Name = "dgvAreas";
+            this.dgvAreas.RowHeadersWidth = 51;
+            this.dgvAreas.Size = new System.Drawing.Size(805, 362);
+            this.dgvAreas.TabIndex = 65;
             // 
             // panel1
             // 
@@ -232,14 +233,15 @@
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dgvUsuarios);
+            this.Controls.Add(this.dgvAreas);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAreas";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmAreas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAreas)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -259,7 +261,7 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.DataGridView dgvAreas;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;

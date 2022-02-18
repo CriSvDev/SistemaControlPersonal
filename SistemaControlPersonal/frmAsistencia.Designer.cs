@@ -38,11 +38,11 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dgvUsuarios = new System.Windows.Forms.DataGridView();
+            this.dgvAsistencia = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAsistencia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -141,16 +141,16 @@
             this.label2.TabIndex = 66;
             this.label2.Text = "Usuario";
             // 
-            // dgvUsuarios
+            // dgvAsistencia
             // 
-            this.dgvUsuarios.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuarios.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvUsuarios.Location = new System.Drawing.Point(25, 167);
-            this.dgvUsuarios.Name = "dgvUsuarios";
-            this.dgvUsuarios.RowHeadersWidth = 51;
-            this.dgvUsuarios.Size = new System.Drawing.Size(811, 365);
-            this.dgvUsuarios.TabIndex = 65;
+            this.dgvAsistencia.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvAsistencia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAsistencia.GridColor = System.Drawing.SystemColors.Control;
+            this.dgvAsistencia.Location = new System.Drawing.Point(25, 167);
+            this.dgvAsistencia.Name = "dgvAsistencia";
+            this.dgvAsistencia.RowHeadersWidth = 51;
+            this.dgvAsistencia.Size = new System.Drawing.Size(811, 365);
+            this.dgvAsistencia.TabIndex = 65;
             // 
             // btnBuscar
             // 
@@ -187,13 +187,14 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dgvUsuarios);
+            this.Controls.Add(this.dgvAsistencia);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAsistencia";
             this.Text = "frmRpteAsistencia";
+            this.Load += new System.EventHandler(this.frmAsistencia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAsistencia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -212,7 +213,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.DataGridView dgvAsistencia;
         private System.Windows.Forms.PictureBox btnBuscar;
         private System.Windows.Forms.Panel panel1;
     }

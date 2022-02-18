@@ -72,7 +72,7 @@
             // 
             // btnAcerca
             // 
-            this.btnAcerca.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btnAcerca.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAcerca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcerca.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnAcerca.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -94,7 +94,7 @@
             // 
             // btnMantenimiento
             // 
-            this.btnMantenimiento.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btnMantenimiento.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMantenimiento.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMantenimiento.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -117,7 +117,7 @@
             // 
             // btnReportes
             // 
-            this.btnReportes.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btnReportes.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -140,7 +140,7 @@
             // 
             // btnAsistencia
             // 
-            this.btnAsistencia.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btnAsistencia.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAsistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsistencia.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnAsistencia.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -171,7 +171,7 @@
             // 
             // btnAreas
             // 
-            this.btnAreas.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btnAreas.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnAreas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAreas.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnAreas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -186,7 +186,7 @@
             // 
             // btnPersonal
             // 
-            this.btnPersonal.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btnPersonal.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPersonal.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnPersonal.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -247,7 +247,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.DarkOrchid;
+            this.pictureBox7.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(171, 353);
             this.pictureBox7.Name = "pictureBox7";
@@ -258,7 +258,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.DarkOrchid;
+            this.pictureBox6.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(172, 289);
             this.pictureBox6.Name = "pictureBox6";
@@ -269,9 +269,9 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.DarkOrchid;
+            this.pictureBox5.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(171, 229);
+            this.pictureBox5.Location = new System.Drawing.Point(171, 227);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(46, 37);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -280,9 +280,9 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.DarkOrchid;
+            this.pictureBox3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(171, 167);
+            this.pictureBox3.Location = new System.Drawing.Point(171, 166);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(46, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -291,7 +291,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.DarkOrchid;
+            this.pictureBox2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(172, 36);
             this.pictureBox2.Name = "pictureBox2";
@@ -302,7 +302,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.DarkOrchid;
+            this.pictureBox4.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(171, 107);
             this.pictureBox4.Name = "pictureBox4";

@@ -12,6 +12,7 @@ namespace SistemaControlPersonal
 {
     public partial class frmAsistencia : Form
     {
+        BaseDeDatos bd = new BaseDeDatos();
         public frmAsistencia()
         {
             InitializeComponent();
@@ -33,6 +34,11 @@ namespace SistemaControlPersonal
             frmModRegAsistencia frmModRegAsis = new frmModRegAsistencia();
             frmModRegAsis.ShowDialog();
 
+        }
+
+        private void frmAsistencia_Load(object sender, EventArgs e)
+        {
+            dgvAsistencia.DataSource = bd.SelectDataTableFromStoreProcedure("sp_MostrarAsistencias");
         }
     }
 }

@@ -26,34 +26,125 @@ EXECUTE (N'CREATE DATABASE DB_ADM_ASISTENCIA
 --        CREACION DE TABLAS 
 -- ================================== 
 USE DB_ADM_ASISTENCIA
+
+CREATE TABLE AREA
+(
+   ID_AREA INT IDENTITY (101,1) PRIMARY KEY NOT NULL,
+   NOMBRE VARCHAR(30) NOT NULL,
+   OFICINA VARCHAR(30) NOT NULL,
+   ESTADO VARCHAR(10) NOT NULL
+)
+GO
+
+CREATE TABLE EMPLEADO
+(
+   ID_EMP INT IDENTITY (10001,1) PRIMARY KEY NOT NULL,
+   NOMBRE VARCHAR(30) NOT NULL,
+   APELLIDO VARCHAR (20) NOT NULL,
+   DNI VARCHAR (20) NOT NULL,
+   FECHA_NAC VARCHAR (10) NOT NULL,
+   DISTRITO VARCHAR (20) NOT NULL,
+   ESTADO VARCHAR (10) NOT NULL,
+   ID_AREA VARCHAR (10)NOT NULL
+)
 GO
 
 CREATE TABLE USUARIO
 (
-   ID_USUARIO INT IDENTITY (10001,1) PRIMARY KEY NOT NULL,
-   USUARIO VARCHAR(30) NOT NULL,
+   ID_EMPS INT IDENTITY (10001,1) PRIMARY KEY NOT NULL,
+   USUARIO VARCHAR (20) NOT NULL,
    CONTRASENA VARCHAR (20) NOT NULL,
    PERFIL VARCHAR (20) NOT NULL,
-   ESTADO VARCHAR (20)NOT NULL
+   ESTADO VARCHAR (20)NOT NULL,
+   ID_EMP VARCHAR (20)NOT NULL
 )
 GO
+
+CREATE TABLE ASISTENCIA
+(
+   ID_EMP VARCHAR (20) NOT NULL,
+   FECHA VARCHAR (20),
+   HORA_INGRESO VARCHAR (20),
+   HORA_SALIDA VARCHAR (20),
+   ESTADO VARCHAR (20)
+)
+GO
+
 
 -- =====================================================
 --       CARGA DE DATOS A LA TABLA USUARIO
 -- =====================================================
-INSERT "USUARIO" VALUES('cvilla','123Cri','ADMINISTRADOR','ACTIVO');
-INSERT "USUARIO" VALUES('cv','123Cris','USUARIO AUDITOR','BAJA');
+INSERT "AREA" VALUES('FINANZAS','Principal','ACTIVO');
+INSERT "AREA" VALUES('MARKETING','Principal','ACTIVO');
+INSERT "AREA" VALUES('OPERACIONES','Principal','ACTIVO');
+INSERT "AREA" VALUES('RECURSOS HUMANOS','Principal','ACTIVO');
+INSERT "AREA" VALUES('LEGAL','Principal','ACTIVO')
+GO
+
+
+INSERT "EMPLEADO" VALUES('Cristian','Villafana','12286198','19/04/1893','Los Olivos','Activo','101');
+INSERT "EMPLEADO" VALUES('Cris','Villafana','14286198','15/04/1897','Los Olivos','Activo','101');
+INSERT "EMPLEADO" VALUES('Cri','Villafana','25686198','15/04/1973','Los Olivos','Activo','102');
+INSERT "EMPLEADO" VALUES('Cr','Villafana','32586198','15/04/1960','Los Olivos','Activo','103');
+INSERT "EMPLEADO" VALUES('Eisten','Villafana','45696118','15/04/2013','Los Olivos','Activo','103')
+GO
+
+
+INSERT "USUARIO" VALUES('cvill','123Cris','ADMINISTRADOR','ACTIVO','10001');
+INSERT "USUARIO" VALUES('cv','123Cris','ADMINISTRADOR','ACTIVO','10002');
+INSERT "USUARIO" VALUES('c','123Cris','USUARIO AUDITOR','BAJA','10003');
+INSERT "USUARIO" VALUES('cr','123Cris','USUARIO AUDITOR','BAJA','10002');
+INSERT "USUARIO" VALUES('cri','123Cris','USUARIO AUDITOR','BAJA','10003');
+GO
+
+INSERT "ASISTENCIA" VALUES('10003','15/02/2022','08:30:25','15:35:25','Tarde');
+INSERT "ASISTENCIA" VALUES('10004','16/02/2022','08:35:25','15:35:25','Tarde');
+INSERT "ASISTENCIA" VALUES('10004','18/02/2022','08:35:25','15:35:25','Normal');
+
 GO
 -- =====================================================
 --       CREACION DE PROCEDIMIENTOS ALMACENADOS
 -- =====================================================
+CREATE PROC sp_MostrarAreas
+AS
+SELECT * FROM AREA
+GO
+
+-----
+CREATE PROC sp_MostrarEmpleados
+AS
+SELECT * FROM EMPLEADO
+GO
+
+-----
 CREATE PROC sp_MostrarUsuarios
 AS
 SELECT * FROM USUARIO
 GO
+
+-----
+CREATE PROC sp_MostrarAsistencias
+AS
+SELECT * FROM ASISTENCIA
+GO
 -- =====================================================
---       EXEC PROCEDIMEINTO
--- =====================================================
+--       EXEC PROCEDIMEINTOEXEC sp_MostrarAreas
+GO
+
+-----
+EXEC sp_MostrarAreas
+GO
+-----
+EXEC sp_MostrarEmpleados
+GO
+
+-----
 EXEC sp_MostrarUsuarios
 GO
+
+-----
+EXEC sp_MostrarAsistencias
+GO
+
+-- =====================================================
 
