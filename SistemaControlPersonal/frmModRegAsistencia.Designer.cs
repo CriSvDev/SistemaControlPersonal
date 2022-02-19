@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtIdEmpleado = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -37,20 +37,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtIngreso = new System.Windows.Forms.DateTimePicker();
+            this.dtSalida = new System.Windows.Forms.DateTimePicker();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtUsuario
+            // txtIdEmpleado
             // 
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(183, 89);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(200, 24);
-            this.txtUsuario.TabIndex = 56;
+            this.txtIdEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdEmpleado.Location = new System.Drawing.Point(183, 89);
+            this.txtIdEmpleado.Name = "txtIdEmpleado";
+            this.txtIdEmpleado.Size = new System.Drawing.Size(200, 24);
+            this.txtIdEmpleado.TabIndex = 56;
             // 
             // label3
             // 
@@ -83,6 +85,7 @@
             this.btnGuardar.TabIndex = 51;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // panel1
             // 
@@ -91,7 +94,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(624, 50);
+            this.panel1.Size = new System.Drawing.Size(633, 50);
             this.panel1.TabIndex = 60;
             // 
             // label2
@@ -99,14 +102,14 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(56, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 16);
+            this.label2.Size = new System.Drawing.Size(87, 16);
             this.label2.TabIndex = 61;
-            this.label2.Text = "ID";
+            this.label2.Text = "Id. Empleado";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(56, 124);
+            this.label4.Location = new System.Drawing.Point(56, 152);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 16);
             this.label4.TabIndex = 62;
@@ -115,50 +118,74 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 158);
+            this.label5.Location = new System.Drawing.Point(54, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 16);
             this.label5.TabIndex = 63;
             this.label5.Text = "Hora de salida";
             // 
-            // dateTimePicker1
+            // dtIngreso
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(183, 124);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 64;
+            this.dtIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtIngreso.Location = new System.Drawing.Point(183, 152);
+            this.dtIngreso.Name = "dtIngreso";
+            this.dtIngreso.Size = new System.Drawing.Size(200, 22);
+            this.dtIngreso.TabIndex = 64;
+            this.dtIngreso.Value = new System.DateTime(2022, 2, 18, 9, 54, 0, 0);
             // 
-            // dateTimePicker2
+            // dtSalida
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(183, 152);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 65;
+            this.dtSalida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtSalida.Location = new System.Drawing.Point(183, 180);
+            this.dtSalida.Name = "dtSalida";
+            this.dtSalida.Size = new System.Drawing.Size(200, 22);
+            this.dtSalida.TabIndex = 65;
+            this.dtSalida.Value = new System.DateTime(2022, 2, 18, 9, 54, 0, 0);
             // 
-            // button1
+            // btnActualizar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(443, 174);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 39);
-            this.button1.TabIndex = 66;
-            this.button1.Text = "Actualizar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnActualizar.Location = new System.Drawing.Point(443, 174);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(169, 39);
+            this.btnActualizar.TabIndex = 66;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(56, 121);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 16);
+            this.label6.TabIndex = 68;
+            this.label6.Text = "Fecha";
+            // 
+            // dtFecha
+            // 
+            this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFecha.Location = new System.Drawing.Point(183, 120);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Size = new System.Drawing.Size(200, 22);
+            this.dtFecha.TabIndex = 69;
+            this.dtFecha.Value = new System.DateTime(2022, 2, 18, 0, 0, 0, 0);
             // 
             // frmModRegAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 291);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.ClientSize = new System.Drawing.Size(633, 294);
+            this.Controls.Add(this.dtFecha);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.dtSalida);
+            this.Controls.Add(this.dtIngreso);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtIdEmpleado);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel1);
@@ -176,7 +203,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtIdEmpleado;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGuardar;
@@ -184,9 +211,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtIngreso;
+        private System.Windows.Forms.DateTimePicker dtSalida;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dtFecha;
     }
 }

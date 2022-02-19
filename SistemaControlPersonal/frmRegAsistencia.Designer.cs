@@ -136,7 +136,7 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Registro de Marcación";
             // 
-            // frmAsistencia
+            // frmRegAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,7 +152,7 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
-            this.Name = "frmAsistencia";
+            this.Name = "frmRegAsistencia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modulo de asistencia";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

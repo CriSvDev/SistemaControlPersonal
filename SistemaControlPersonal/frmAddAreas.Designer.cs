@@ -31,13 +31,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtContra = new System.Windows.Forms.TextBox();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtOficina = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,7 @@
             this.button1.TabIndex = 89;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -74,29 +75,21 @@
             this.label2.TabIndex = 39;
             this.label2.Text = "Registro de areas";
             // 
-            // textBox2
+            // txtOficina
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(191, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 24);
-            this.textBox2.TabIndex = 94;
+            this.txtOficina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOficina.Location = new System.Drawing.Point(191, 123);
+            this.txtOficina.Name = "txtOficina";
+            this.txtOficina.Size = new System.Drawing.Size(256, 24);
+            this.txtOficina.TabIndex = 85;
             // 
-            // txtContra
+            // txtNombre
             // 
-            this.txtContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContra.Location = new System.Drawing.Point(191, 123);
-            this.txtContra.Name = "txtContra";
-            this.txtContra.Size = new System.Drawing.Size(256, 24);
-            this.txtContra.TabIndex = 85;
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(191, 92);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(256, 24);
-            this.txtUsuario.TabIndex = 84;
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(191, 92);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(256, 24);
+            this.txtNombre.TabIndex = 84;
             // 
             // label4
             // 
@@ -129,6 +122,7 @@
             this.btnActualizar.TabIndex = 79;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // panel1
             // 
@@ -140,16 +134,27 @@
             this.panel1.Size = new System.Drawing.Size(690, 41);
             this.panel1.TabIndex = 88;
             // 
+            // cboEstado
+            // 
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.cboEstado.Location = new System.Drawing.Point(191, 162);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(256, 24);
+            this.cboEstado.TabIndex = 94;
+            // 
             // frmAddAreas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 280);
+            this.Controls.Add(this.cboEstado);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtContra);
-            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtOficina);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnActualizar);
@@ -172,12 +177,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox txtContra;
-        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.TextBox txtOficina;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox cboEstado;
     }
 }

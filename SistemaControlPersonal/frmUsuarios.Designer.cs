@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuarios));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label5 = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,16 +55,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(58, 124);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(56, 127);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 16);
+            this.label5.Size = new System.Drawing.Size(62, 22);
             this.label5.TabIndex = 50;
             this.label5.Text = "Filtro:";
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(467, 153);
+            this.txtEstado.Location = new System.Drawing.Point(539, 152);
             this.txtEstado.MaximumSize = new System.Drawing.Size(120, 30);
             this.txtEstado.MinimumSize = new System.Drawing.Size(110, 30);
             this.txtEstado.Name = "txtEstado";
@@ -72,19 +75,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(411, 159);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(461, 160);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 16);
+            this.label4.Size = new System.Drawing.Size(72, 22);
             this.label4.TabIndex = 48;
             this.label4.Text = "Estado";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(56, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 25);
+            this.label1.Size = new System.Drawing.Size(280, 32);
             this.label1.TabIndex = 47;
             this.label1.Text = "Listado de usuarios";
             // 
@@ -92,7 +98,7 @@
             // 
             this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.Location = new System.Drawing.Point(583, 143);
+            this.btnBuscar.Location = new System.Drawing.Point(665, 144);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(103, 42);
             this.btnBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -115,15 +121,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(58, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 16);
+            this.label3.Size = new System.Drawing.Size(29, 22);
             this.label3.TabIndex = 44;
             this.label3.Text = "ID";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(84, 153);
+            this.txtID.Location = new System.Drawing.Point(93, 152);
             this.txtID.MaximumSize = new System.Drawing.Size(120, 30);
             this.txtID.MinimumSize = new System.Drawing.Size(100, 30);
             this.txtID.Name = "txtID";
@@ -171,7 +179,7 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(285, 153);
+            this.txtUsuario.Location = new System.Drawing.Point(316, 155);
             this.txtUsuario.MaximumSize = new System.Drawing.Size(120, 30);
             this.txtUsuario.MinimumSize = new System.Drawing.Size(110, 30);
             this.txtUsuario.Name = "txtUsuario";
@@ -181,21 +189,37 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(215, 160);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(231, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 16);
+            this.label2.Size = new System.Drawing.Size(79, 22);
             this.label2.TabIndex = 38;
             this.label2.Text = "Usuario";
             // 
             // dgvUsuarios
             // 
-            this.dgvUsuarios.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(34)))), ((int)(((byte)(99)))));
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuarios.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvUsuarios.Location = new System.Drawing.Point(63, 191);
+            this.dgvUsuarios.Location = new System.Drawing.Point(60, 204);
             this.dgvUsuarios.Name = "dgvUsuarios";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(34)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(34)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUsuarios.RowHeadersWidth = 51;
-            this.dgvUsuarios.Size = new System.Drawing.Size(773, 368);
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(34)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(34)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvUsuarios.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvUsuarios.Size = new System.Drawing.Size(773, 334);
             this.dgvUsuarios.TabIndex = 37;
             // 
             // panel1
@@ -212,6 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(34)))), ((int)(((byte)(99)))));
             this.ClientSize = new System.Drawing.Size(1124, 583);
             this.ControlBox = false;
             this.Controls.Add(this.label5);
@@ -228,6 +253,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

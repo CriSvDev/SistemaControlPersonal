@@ -51,6 +51,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -60,12 +62,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Red;
-            this.panel8.Location = new System.Drawing.Point(9, 342);
+            this.panel8.Location = new System.Drawing.Point(5, 466);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(12, 58);
             this.panel8.TabIndex = 11;
@@ -76,7 +79,7 @@
             this.btnAcerca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcerca.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnAcerca.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAcerca.Location = new System.Drawing.Point(16, 343);
+            this.btnAcerca.Location = new System.Drawing.Point(12, 467);
             this.btnAcerca.Name = "btnAcerca";
             this.btnAcerca.Size = new System.Drawing.Size(209, 58);
             this.btnAcerca.TabIndex = 12;
@@ -87,7 +90,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Red;
-            this.panel7.Location = new System.Drawing.Point(8, 278);
+            this.panel7.Location = new System.Drawing.Point(4, 402);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(12, 58);
             this.panel7.TabIndex = 9;
@@ -98,7 +101,7 @@
             this.btnMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMantenimiento.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnMantenimiento.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnMantenimiento.Location = new System.Drawing.Point(16, 279);
+            this.btnMantenimiento.Location = new System.Drawing.Point(12, 403);
             this.btnMantenimiento.Name = "btnMantenimiento";
             this.btnMantenimiento.Size = new System.Drawing.Size(209, 58);
             this.btnMantenimiento.TabIndex = 10;
@@ -110,7 +113,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Red;
-            this.panel6.Location = new System.Drawing.Point(9, 218);
+            this.panel6.Location = new System.Drawing.Point(5, 342);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(12, 51);
             this.panel6.TabIndex = 7;
@@ -121,7 +124,7 @@
             this.btnReportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnReportes.Location = new System.Drawing.Point(16, 216);
+            this.btnReportes.Location = new System.Drawing.Point(12, 340);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(209, 57);
             this.btnReportes.TabIndex = 8;
@@ -133,7 +136,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Red;
-            this.panel5.Location = new System.Drawing.Point(9, 159);
+            this.panel5.Location = new System.Drawing.Point(5, 283);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(12, 51);
             this.panel5.TabIndex = 5;
@@ -144,7 +147,7 @@
             this.btnAsistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAsistencia.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnAsistencia.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAsistencia.Location = new System.Drawing.Point(16, 157);
+            this.btnAsistencia.Location = new System.Drawing.Point(12, 281);
             this.btnAsistencia.Name = "btnAsistencia";
             this.btnAsistencia.Size = new System.Drawing.Size(209, 53);
             this.btnAsistencia.TabIndex = 6;
@@ -156,7 +159,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Red;
-            this.panel4.Location = new System.Drawing.Point(9, 97);
+            this.panel4.Location = new System.Drawing.Point(5, 221);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 51);
             this.panel4.TabIndex = 3;
@@ -164,7 +167,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Red;
-            this.panel3.Location = new System.Drawing.Point(9, 26);
+            this.panel3.Location = new System.Drawing.Point(5, 150);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(12, 60);
             this.panel3.TabIndex = 2;
@@ -175,7 +178,7 @@
             this.btnAreas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAreas.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnAreas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAreas.Location = new System.Drawing.Point(16, 95);
+            this.btnAreas.Location = new System.Drawing.Point(12, 219);
             this.btnAreas.Name = "btnAreas";
             this.btnAreas.Size = new System.Drawing.Size(209, 56);
             this.btnAreas.TabIndex = 4;
@@ -190,7 +193,7 @@
             this.btnPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPersonal.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnPersonal.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnPersonal.Location = new System.Drawing.Point(16, 26);
+            this.btnPersonal.Location = new System.Drawing.Point(12, 150);
             this.btnPersonal.Name = "btnPersonal";
             this.btnPersonal.Size = new System.Drawing.Size(209, 60);
             this.btnPersonal.TabIndex = 2;
@@ -249,7 +252,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(171, 353);
+            this.pictureBox7.Location = new System.Drawing.Point(167, 477);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(46, 37);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -260,7 +263,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(172, 289);
+            this.pictureBox6.Location = new System.Drawing.Point(168, 413);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(46, 37);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -271,7 +274,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(171, 227);
+            this.pictureBox5.Location = new System.Drawing.Point(167, 351);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(46, 37);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -282,7 +285,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(171, 166);
+            this.pictureBox3.Location = new System.Drawing.Point(167, 290);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(46, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -293,7 +296,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(172, 36);
+            this.pictureBox2.Location = new System.Drawing.Point(168, 160);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(46, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -304,7 +307,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightSeaGreen;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(171, 107);
+            this.pictureBox4.Location = new System.Drawing.Point(167, 231);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(46, 37);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -314,12 +317,35 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1353, 61);
             this.panel1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Location = new System.Drawing.Point(76, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 39);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Easy Bank";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(12, 1);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(58, 48);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox8.TabIndex = 1;
+            this.pictureBox8.TabStop = false;
             // 
             // frmPricipal
             // 
@@ -348,6 +374,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -376,5 +404,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtPerfil = new System.Windows.Forms.TextBox();
             this.txtContra = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -41,16 +40,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtIdEmpleado = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstado.Location = new System.Drawing.Point(161, 157);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(157, 24);
-            this.txtEstado.TabIndex = 49;
             // 
             // txtPerfil
             // 
@@ -168,14 +160,25 @@
             this.label2.TabIndex = 51;
             this.label2.Text = "Id. Empleado";
             // 
+            // cboEstado
+            // 
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "Activo",
+            "Baja"});
+            this.cboEstado.Location = new System.Drawing.Point(161, 159);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(157, 24);
+            this.cboEstado.TabIndex = 53;
+            // 
             // frmAddUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 266);
+            this.Controls.Add(this.cboEstado);
             this.Controls.Add(this.txtIdEmpleado);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtEstado);
             this.Controls.Add(this.txtPerfil);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtUsuario);
@@ -200,8 +203,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtPerfil;
         private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.TextBox txtUsuario;
@@ -214,5 +215,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtIdEmpleado;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cboEstado;
     }
 }
