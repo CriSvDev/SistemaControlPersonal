@@ -16,7 +16,7 @@ namespace SistemaControlPersonal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAplicacion());
+            Application.Run(new frmPricipal());
         }
     }
 }

@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
+
 
 namespace SistemaControlPersonal
 {
+
     public partial class frmUsuarios : Form
     {
+
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["connection"].ConnectionString);
         BaseDeDatos bd = new BaseDeDatos();
         public frmUsuarios()
         {
@@ -19,28 +25,61 @@ namespace SistemaControlPersonal
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            frmAddUsuario frmAddUsuario = new frmAddUsuario();
-            frmAddUsuario.ShowDialog();
+            SqlCommand cmd = new SqlCommand("USP_ADUSUARIOS", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
 
+            cmd.Parameters.AddWithValue("@USUARIO", txtUsuario.Text);
+            cmd.Parameters.AddWithValue("@CONTRASENA", txtContra.Text);
+            cmd.Parameters.AddWithValue("@PERFIL", txtPerfil.Text);
+            cmd.Parameters.AddWithValue("@ESTADO", cboEstado.Text);
+            cmd.Parameters.AddWithValue("@ID_EMP", txtIdEmpleado.Text);
+
+            cn.Open();
+
+            try
+            {
+                int i = cmd.ExecuteNonQuery();
+                MessageBox.Show(i.ToString() + " registro agregado");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+            dgvUsuarios.DataSource = bd.SelectDataTableFromStoreProcedure("usp_MostrarUsuarios");
         }
 
-
-        private void btnBuscar_Click_1(object sender, EventArgs e)
+    private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtID.Text) || !string.IsNullOrEmpty(txtUsuario.Text) || !string.IsNullOrEmpty(txtEstado.Text))
-            {
-                dgvUsuarios.DataSource = bd.SelectDataTable("select * from USUARIO where ID_USUARIO = '" + txtID.Text + "' OR USUARIO = '" + txtUsuario.Text + "' OR ESTADO = '" + txtEstado.Text + "'");
-            }
-            else
-            {
-                MessageBox.Show("Ingrese criterios de busqueda");
-            }
-        }
 
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            frmModifUsuario frmModiUsuario = new frmModifUsuario();
-            frmModiUsuario.ShowDialog();
+            SqlCommand cmd = new SqlCommand("USP_UPDUSUARIOS", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@USUARIO", txtUsuario.Text);
+            cmd.Parameters.AddWithValue("@CONTRASENA", txtContra.Text);
+            cmd.Parameters.AddWithValue("@PERFIL", txtPerfil.Text);
+            cmd.Parameters.AddWithValue("@ESTADO", cboEstado.Text);
+            cmd.Parameters.AddWithValue("@ID_EMP", txtIdEmpleado.Text);
+
+            cn.Open();
+
+            try
+            {
+                int i = cmd.ExecuteNonQuery();
+                MessageBox.Show(i.ToString() + " registro actualizado");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+            dgvUsuarios.DataSource = bd.SelectDataTableFromStoreProcedure("usp_MostrarUsuarios");
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -50,12 +89,42 @@ namespace SistemaControlPersonal
 
         private void frmUsuarios_Load(object sender, EventArgs e)
         {
-            dgvUsuarios.DataSource = bd.SelectDataTableFromStoreProcedure("sp_MostrarUsuarios");
+            dgvUsuarios.DataSource = bd.SelectDataTableFromStoreProcedure("usp_MostrarUsuarios");
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            SqlCommand cmd = new SqlCommand("USP_DELUSUARIO", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
 
+            cmd.Parameters.AddWithValue("@USUARIO", txtUsuario.Text);
+
+            cn.Open();
+
+            try
+            {
+                int i = cmd.ExecuteNonQuery();
+                MessageBox.Show(i.ToString() + " registro eliminado");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+            dgvUsuarios.DataSource = bd.SelectDataTableFromStoreProcedure("usp_MostrarUsuarios");
+        }
+
+        private void dgvUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtUsuario.Text = dgvUsuarios.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtContra.Text = dgvUsuarios.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtPerfil.Text = dgvUsuarios.Rows[e.RowIndex].Cells[2].Value.ToString();
+            cboEstado.Text = dgvUsuarios.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtIdEmpleado.Text = dgvUsuarios.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
     }
 }
+

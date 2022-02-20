@@ -120,6 +120,7 @@
             this.btnModificar.TabIndex = 55;
             this.btnModificar.Text = "Generar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label2
             // 

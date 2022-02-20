@@ -205,7 +205,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1292, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1415, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(58, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -218,7 +218,7 @@
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(235, 61);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(1118, 730);
+            this.pnlContenedor.Size = new System.Drawing.Size(1250, 763);
             this.pnlContenedor.TabIndex = 5;
             // 
             // panel2
@@ -245,7 +245,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 61);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(235, 730);
+            this.panel2.Size = new System.Drawing.Size(235, 763);
             this.panel2.TabIndex = 4;
             // 
             // pictureBox7
@@ -323,7 +323,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1353, 61);
+            this.panel1.Size = new System.Drawing.Size(1485, 61);
             this.panel1.TabIndex = 3;
             // 
             // label1
@@ -351,7 +351,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1353, 791);
+            this.ClientSize = new System.Drawing.Size(1485, 824);
             this.ControlBox = false;
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.panel2);
