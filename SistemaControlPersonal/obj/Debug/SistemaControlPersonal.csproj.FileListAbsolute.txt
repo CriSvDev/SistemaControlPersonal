@@ -17,3 +17,41 @@ C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaCont
 C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAreas.resources
 C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmReportes.resources
 C:\WS_VISUAL\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmRegAsistencia.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\bin\Debug\SistemaControlPersonal.exe.config
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\bin\Debug\SistemaControlPersonal.exe
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\bin\Debug\SistemaControlPersonal.pdb
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.csproj.AssemblyReference.cache
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.csproj.SuggestedBindingRedirects.cache
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAplicacion.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAreas.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmLogeo.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmPersonal.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmPricipal.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmRegAsistencia.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmReportes.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAsistencia.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmUsuarios.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.Properties.Resources.resources
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.csproj.GenerateResource.cache
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.csproj.CoreCompileInputs.cache
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.exe
+D:\Projectos\PROYECTO DE POO 1\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.pdb
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.csproj.SuggestedBindingRedirects.cache
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAplicacion.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAreas.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmLogeo.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmPersonal.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmPricipal.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmRegAsistencia.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmReportes.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmAsistencia.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.frmUsuarios.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.exe
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\obj\Debug\SistemaControlPersonal.pdb
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\bin\Debug\SistemaControlPersonal.exe.config
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\bin\Debug\SistemaControlPersonal.exe
+C:\Users\LENOVO\Desktop\SistemaControlPersonal\SistemaControlPersonal\bin\Debug\SistemaControlPersonal.pdb

@@ -139,7 +139,7 @@ GO
 --======= TABLA EMPLEADO
 
 --## PROC SELECT
-CREATE PROC sp_MostrarEmpleados
+CREATE PROC usp_MostrarEmpleados
 AS
 SELECT * FROM EMPLEADO
 GO
@@ -235,7 +235,7 @@ GO
 EXEC usp_MostrarAreas
 GO
 -----
-EXEC sp_MostrarEmpleados
+EXEC usp_MostrarEmpleados
 GO
 
 -----
@@ -247,4 +247,11 @@ EXEC usp_MostrarAsistencias
 GO
 
 -- =====================================================
+
+
+CREATE PROC USP_ADRG_ASIEMPLEADO @ID_EMP INT,@FECHA VARCHAR(50), @HORA_INGRESO VARCHAR(50),@HORA_SALIDA VARCHAR(50)					
+AS
+INSERT ASISTENCIA (ID_EMP,FECHA,HORA_INGRESO,HORA_SALIDA)
+VALUES (@ID_EMP,@FECHA,@HORA_INGRESO,@HORA_SALIDA)
+GO
 

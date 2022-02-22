@@ -123,5 +123,23 @@ namespace SistemaControlPersonal
             txtDireccion.Text = dgvAreas.Rows[e.RowIndex].Cells[3].Value.ToString();
             cboEstado.Text = dgvAreas.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
+
+        private void txtOficina_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Normal) this.WindowState = FormWindowState.Maximized;
+         else if (this.WindowState == FormWindowState.Maximized) this.WindowState = FormWindowState.Normal;
+
+        }
     }
 }

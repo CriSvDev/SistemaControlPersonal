@@ -50,7 +50,7 @@ namespace SistemaControlPersonal
             {
                 cn.Close();
             }
-            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("sp_MostrarEmpleados");
+            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("usp_MostrarEmpleados");
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -83,7 +83,7 @@ namespace SistemaControlPersonal
             {
                 cn.Close();
             }
-            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("sp_MostrarEmpleados");
+            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("usp_MostrarEmpleados");
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -108,13 +108,13 @@ namespace SistemaControlPersonal
             {
                 cn.Close();
             }
-            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("sp_MostrarEmpleados");
+            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("usp_MostrarEmpleados");
         }
 
 
         private void frmPersonal_Load(object sender, EventArgs e)
         {
-            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("sp_MostrarEmpleados");
+            dgvPersonal.DataSource = bd.SelectDataTableFromStoreProcedure("usp_MostrarEmpleados");
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -133,6 +133,22 @@ namespace SistemaControlPersonal
             txtDireccion.Text = dgvPersonal.Rows[e.RowIndex].Cells[6].Value.ToString();
             cboEstado.Text = dgvPersonal.Rows[e.RowIndex].Cells[7].Value.ToString();
             txtIdArea.Text = dgvPersonal.Rows[e.RowIndex].Cells[8].Value.ToString();
+        }
+
+        private void btnCerrar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Normal) this.WindowState = FormWindowState.Maximized;
+         else if (this.WindowState == FormWindowState.Maximized) this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
